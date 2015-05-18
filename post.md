@@ -2,7 +2,7 @@ This article is intended for people who have some knowledge of programming and w
 
  > I recently realized that I'm no longer a timid developer. I realized the tools I use are so much better than how I originally handled minor issues. Most of the skills I have now that make me a great developer are not how well I can write AngularJS code, but the things I use *while* I develop. The end product is usually better as a result, but I want to draw attention to the development workflow, especially for new developers.
  
- ## Case 1: jQuery
+## Install jQuery the right way!
  
 Pretend you want to use jQuery. A new developer might google [jquery](https://jquery.com/download/) and download the `.js` files via the links they find on the first google hit. Done. You can now use jQuery. But think about this and be as pessimistic as possible: you realized you need to use jquery in the project, so you stop. At this point, the clock is ticking. You google jquery, you find the package. You download it, you move it into your project. That's too many steps. That could take 5 minutes or more. How can we improve this process?
 
@@ -17,13 +17,13 @@ Use NPM. NPM is your friend. Most everything is available via NPM. Here's what y
 Once you completely switch to using NPM for all external packages, you will notice your applications architecture has improved. You will also, if you use the optional `--save-dev` flag, be able to include these dependencies, without including every file associated with those dependencies. Every time you use --save-dev, the package installed (e.g. jQuery) will be added to a **package.json** file. You've probably seen package.json in some github projects. What this package.json file does, is when you download (or git clone) a project that has a package.json, you can simply run `npm install` and NPM will parse the package.json file and install all packages into node_modules. This way you can commit your project to git (your project uses jQuery), without including your own file of jQuery.
 
 
- ## Case 2: Twitter Bootstrap
+## Download Twitter Bootstrap Hassle-Free!
  
  Your jQuery project has progressed and now you need to use bootstraps button classes, the grid, and other things in bootstrap. Now that we are using NPM for everything, we think let's install that package with NPM. So, you don't know if it's bootstrap, twitter-bootstrap, but a quick google of *"npm install bootstrap"* will help us know what the package is called on the node package network. We see it is simply called bootstrap and we run `npm install bootsrap`
 
 It might be subtle, but for a project that uses jQuery and Bootstrap, we could save upwards of half an hour installing these two packages via NPM. You avoid navigating through the project's documentation, you avoid deciding which parts of the package you do or don't need, and you avoid your web browser all together (therefore, you aren't at risk to absent mindedly open a new tab and browse reddit). Think about how this scales: you might eventually have a project that has tens of open source packages. You would not want to spend a whole day finding each of the packages downloadable zip file, extracting them, figuring out which files you need and how to organize them.
  
- ## GH-PAGES
+## Host your LIVE DEMO for FREE at GH-PAGES!
  
  This section will include a tutorial of how I created [my markdown editor](http://juliusakula.github.io/editor/#/) and hosted it through github-pages. 
  
@@ -35,7 +35,7 @@ It might be subtle, but for a project that uses jQuery and Bootstrap, we could s
  
  I said using gh-pages was simple. Normally, you will run the command `git push origin master` -- this pushes your local master branch changes to the remote repository master branch. To make github host the project, run the command `git push origin master:gh-pages`. This pushes your local master branch to the remote's gh-pages branch. Within a couple of minutes, you will be able to see your project live, hosted for free. After the first push to remote gh-pages, subsequent pushed changes will be visible nearly instantly. In the settings of the github repo you can find the gh-pages link (or, rearrange the project name and github user as I described in the paragraph above), you want to include that link in the projects main README.md file so that people going to your repository know that a demo is available.
  
- ## Let's make a project from scratch, like a boss!
+## Let's make a project from scratch, like a boss!
  
  I wanted a tool that I could type Markdown in one place, and see it render in another. I know angularJS and I wanted to use a markdown directive. I knew this problem had been solved before, so I searched for markdown directives, and I found [angular-md](https://www.npmjs.com/package/angular-md). This page does have a demo, but I didn't like it. I like bootstrap. I also wanted to use angular directives, because it's the one part of angular that I still have tons of hours of learning yet to do.
  
