@@ -19,7 +19,7 @@ Once you completely switch to using NPM for all external packages, you will noti
 
 ## Download Twitter Bootstrap Hassle-Free!
  
- Your jQuery project has progressed and now you need to use bootstraps button classes, the grid, and other things in bootstrap. Now that we are using NPM for everything, we think let's install that package with NPM. So, you don't know if it's bootstrap, twitter-bootstrap, but a quick google of *"npm install bootstrap"* will help us know what the package is called on the node package network. We see it is simply called bootstrap and we run `npm install bootsrap`
+ Your jQuery project has progressed and now you need to use bootstraps button classes, the grid, and other things in bootstrap. Now that we are using NPM for everything, we think let's install that package with NPM. So, you don't know if it's bootstrap, twitter-bootstrap, but a quick google of *"npm install bootstrap"* will help us know what the package is called on the node package network. We see it is simply called bootstrap and we run `npm install bootstrap`
 
 It might be subtle, but for a project that uses jQuery and Bootstrap, we could save upwards of half an hour installing these two packages via NPM. You avoid navigating through the project's documentation, you avoid deciding which parts of the package you do or don't need, and you avoid your web browser all together (therefore, you aren't at risk to absent mindedly open a new tab and browse reddit). Think about how this scales: you might eventually have a project that has tens of open source packages. You would not want to spend a whole day finding each of the packages downloadable zip file, extracting them, figuring out which files you need and how to organize them.
  
